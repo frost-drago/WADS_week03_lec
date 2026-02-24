@@ -1,0 +1,117 @@
+/* Sci-fi gradient background */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #0f2027 0%,
+    #2c5364 35%,
+    #6a11cb 65%,
+    #ff00cc 100%
+  );
+
+  padding: 24px;
+}
+
+/* Glass card */
+.card {
+  width: 100%;
+  max-width: 420px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 0 30px rgba(255, 0, 204, 0.25),
+    0 0 60px rgba(106, 17, 203, 0.15);
+}
+
+/* Title */
+.title {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Labels */
+.label {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 10px 12px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.input:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 0 2px rgba(255, 0, 204, 0.25);
+}
+
+/* Button */
+.button {
+  margin-top: 8px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #6a11cb, #ff00cc);
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255, 0, 204, 0.35);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Status text */
+.status {
+  margin-top: 12px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
